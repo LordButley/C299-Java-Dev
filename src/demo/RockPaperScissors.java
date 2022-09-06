@@ -123,12 +123,11 @@ public class RockPaperScissors {
 				
 				if (inputChoice >= minNum && inputChoice <= maxNum) {
 					isValid = true;
-//					roundScanner.close();
 				} else {
 					System.out.println("Please enter a number between "+minNum+" and "+maxNum);
 				}
 			} catch (NumberFormatException e) {
-				System.out.println("You didn't enter a number. Please enter a number between "+minNum+" and "+maxNum);
+				System.out.println("You didn't enter a whole number. Please enter a number between "+minNum+" and "+maxNum);
 			}		
 		} while(!isValid);
 		return inputChoice;
